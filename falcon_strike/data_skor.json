@@ -1,0 +1,32 @@
+{
+    "SIGMA": {
+        "PESAWAT_BIASA": 2350,
+        "PESAWAT_BOMBER": 5480,
+        "PESAWAT_RAPTOR": 3860
+    },
+    "AGUNG": {
+        "PESAWAT_BIASA": 1990,
+        "PESAWAT_BOMBER": 3940,
+        "PESAWAT_RAPTOR": 320
+    },
+    "RICKY": {
+        "PESAWAT_BIASA": 4070,
+        "PESAWAT_BOMBER": 3050,
+        "PESAWAT_RAPTOR": 7650
+    },
+    "ZUPZZ": {
+        "PESAWAT_BIASA": 0,
+        "PESAWAT_BOMBER": 0,
+        "PESAWAT_RAPTOR": 10
+    },
+    "BARUNA": {
+        "PESAWAT_BIASA": 2670,
+        "PESAWAT_BOMBER": 1270,
+        "PESAWAT_RAPTOR": 60
+    },
+    "ACONJ": {
+        "PESAWAT_BIASA": 0,
+        "PESAWAT_BOMBER": 0,
+        "PESAWAT_RAPTOR": 3810
+    }
+}
