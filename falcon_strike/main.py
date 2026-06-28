@@ -40,6 +40,7 @@ def _load_sound(nama_file, volume=1.0):
         return None
 
 sound_tembak = _load_sound("shoot.wav",   volume=0.4)
+sound_laser  = _load_sound("laser.wav",   volume=0.5)
 sound_hancur = _load_sound("explode.wav", volume=0.6)
 sound_leave  = _load_sound("leave.wav",   volume=0.8)
 sound_pilih  = _load_sound("pilih.wav",   volume=0.7)
@@ -137,7 +138,11 @@ def jalankan_game(medan="LAUT"):
                 elif tipe_tembakan == "laser_serong":
                     daftar_peluru.append(LaserSerong(pemain.rect.centerx, pemain.rect.top))
 
-                if sound_tembak:
+                if tipe_tembakan in ("laser", "laser_ganda", "laser_serong"):
+                    if sound_laser:
+                        pygame.mixer.set_num_channels(64)
+                        sound_laser.play()
+                elif sound_tembak:
                     pygame.mixer.set_num_channels(64)
                     sound_tembak.play()
                 pemain.last_shot = waktu_sekarang
